@@ -106,16 +106,49 @@
  ## Result Test 
    Send data from postman to producer service
    
-   ![](producer_sending_an_order.png)
+   ![](images/producer_sending_an_order.png)
  
    Consumer listent the object of Order in Json format
    
-   ![](consumer_listened_order_json_object.png)
+   ![](images/consumer_listened_order_json_object.png)
    
    
- ## Produce and consume String 
+ ## Producer and consumer for String 
    In kafka-message-code-producer-consumer, configuration is simple, consumerfactory does not need to load into ConcurrentKafkaListener
    because consumer default accept string, all the code in repository, we do not need to example 
-   Here 
+   Here is the producer service code which will be called by controller and read the local resume.txt file and convert string to lowercase and
+   each words are delimited by a space !
+   send to topic 
    
+         ....
+        @Service
+        @Slf4j
+        @RequiredArgsConstructor
+        public class KafkaProducer {
+            @Bean
+            public NewTopic  createNewTopic () {
+                return TopicBuilder.name(Constants.TOPIC_NAME).build();
+            }
+
+            private final KafkaTemplate<String, String > kafkaTemplate;
+
+            public void sendMessage(String message) throws IOException {
+                final Predicate<String> valueNotNullOrEmpty
+                        = e -> e != null && !e.isEmpty() && e.trim().length()>1;
+
+                Path path = Paths.get("src/main/resume.txt");
+               List<String> words= Files.lines(path)
+                       .flatMap(line -> Arrays.stream(line.trim().split("\\s")))
+                       .filter(valueNotNullOrEmpty)
+                       .map(word->word.replaceAll("[^a-zA-Z]","").toLowerCase().trim())
+                        .collect(Collectors.toList());
+
+                StringBuffer totalMsg= new StringBuffer();
+                totalMsg.append(message+"\n");
+                words.forEach(x->totalMsg.append(x+" "));
+                log.info("Sending message {} ",totalMsg);
+                kafkaTemplate.send("MySpringTopic", totalMsg.toString());
+            }
+        }
+   ![](images/consumer_received_resume.png)
    
