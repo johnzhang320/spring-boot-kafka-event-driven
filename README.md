@@ -102,9 +102,20 @@
                 log.info("Consumer received order: {} ", order.toString());
             }
         }
+        
+ ## Result Test 
+   Send data from postman to producer service
+   
+   ![](producer_sending_an_order.png)
  
+   Consumer listent the object of Order in Json format
+   
+   ![](consumer_listened_order_json_object.png)
+   
+   
  ## Produce and consume String 
    In kafka-message-code-producer-consumer, configuration is simple, consumerfactory does not need to load into ConcurrentKafkaListener
    because consumer default accept string, all the code in repository, we do not need to example 
+   Here 
    
    
