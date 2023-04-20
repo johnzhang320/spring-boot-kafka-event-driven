@@ -1,3 +1,0 @@
-[2023-04-04 17:07:11,394] INFO Snapshotting: 0xfa to /tmp/zookeeper/version-2/snapshot.fa (org.apache.zookeeper.server.persistence.FileTxnSnapLog)
-[2023-04-04 17:07:11,512] INFO Creating new log file: log.fc (org.apache.zookeeper.server.persistence.FileTxnLog)
-[2023-04-04 17:07:11,528] INFO Snapshot taken in 140 ms (org.apache.zookeeper.server.ZooKeeperServer)
