@@ -89,4 +89,8 @@
             }
         }
  
- 
+ ## Produce and consume String 
+   In kafka-message-code-producer-consumer, configuration is simple, consumerfactory does not need to load into ConcurrentKafkaListener
+   because consumer default accept string, all the code in repository, we do not need to example 
+   
+   
