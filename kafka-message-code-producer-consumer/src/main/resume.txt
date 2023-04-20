@@ -1,0 +1,139 @@
+   Jian (John) Zhang
+1364 Carlsen Way							          (408)234-7798
+San Jose, CA 95118         	 	      					          john.zhang320@gmail.com
+_________________________________________________________________________________________________
+
+OBJECTIVE
+
+Senior Java Developer  
+_________________________________________________________________________________________________
+
+Key Qualification
+•	Computer Science of Master Degree and 15+ years of  Software Development Experience , 
+•	Design, Implement, coding and testing using Java and recently working experience in Intel, Apple and Dell
+•	My most current experience: Java, Spring boot on Microservice/Rest API/MVC/Batch/Security/ Oauth2 /Kafka//MongoDb/Cassandra/MySQL/Oracle/SQL Server.  DockerFile/Docker Compose/Google Jib/Docker Hub, AWS EC2/ECS, Stored Procedures, git and github and Jira. Angular,  AngularJS,  JQuery, JSP and Javascript.  Scala on Data Science/Spark/Kafka, knowledge about data science in scala code
+•	Strong knowledge on Data Structure and Algorithm and Design Pattern on multiple working systems
+•	Design/coding/code review/unit/integrated testing/trouble shorting on Intel ICMS Forecast Service API, WebUI and Stored Procedure/Trigger, Apply Pay Certificate Engine, Apple iAd and Automation Engine, Dell Email Security Operation WebUI etc
+•	Worked on Java 1.6/1.7/1.8/17 and platform and tools such as IntelliJ, Eclipse, gradle, maven and github  
+•	Extension API experience using Spring and SpringBoot including Spring Microservice, Spring JPA, Spring Mongodb, Spring Cassandra, Spring Restful, Spring MVC, Hands on Spring Microservice, Spring Security, Spring Oauth2. Applied Java, Spring and Database to API development
+•	Oracle Certificated DBA and 6 years DBA experience on Oracle and MS SQL Server, expertise on Hibernate(Java and Spring), Spring JPA, Recent QueryDSL in Intel and Strong JDBC for many years, SQL and Java database performance tuning, PL/SQL and T-SQL Stored Procedure Coding/Testing, Database Trigger Coding/Testing and working experience on MS SQL Server and MySQL. Coding on Spring Integrating with Cassandra and MongoDb, good knowledge about No-SQL.
+•	Hands on and Coding Experience on Spark and Scala, working on Kafka in Apple and MQ-Active in Intel
+•	Working experience on Javascript, JQuery, AngularJS, Sencha, JSP with Spring MVC and Struts. Completed many applications in frontend projects.
+•	Especially created JSON-String-Library, Huge XML chuck import and tuning, TestNG  automation, X509 Certificate Engine, Password Frontend Encryption before submit, SSL Connection Package and Spring Boot Security, Log4j2 cluster setting etc.
+•	My coding in github repository:
+ 
+My microservice repository: http://github.com/johnzhang320/microservice-master (included JDK 17,  Springboot 2.7.8 on Eureka Server/Client/Cloud API Gateway/Open Feign Client/Resilience4J Circuit Breaker/Kafka Event Driven/Rest API/ Mongodb/Mysql /Global Exception Handle.  Docker on confluent kafka/KeyCloak) 
+Spring boot Security Oath2 https://github.com/johnzhang320/spring-oauth2-code-flow-and-username-password-flow-demo
+        My major code repository: https://github.com/johnzhang320/DevGeekSkills.git  (Large repository included Spring on Rest  
+        API/ MVC Projects/JPA/Hibernate/MySQL/Cassandra/Security/OAuth2/Key Pair API. Scala on Kafka/Spark/Data Science
+My exploring project for password, bank account number and social security front end public key encryption:
+ https://github.com/johnzhang320/front-end-public-key-encryption (included JQuery public key encryption interface, java key pair generator and rest API, Spring BCryptionPasswordEncode, Spring Security, Spring MVC, CSS, JSP, Javascript, Spring JPA/MySQL)
+
+•	Computer Science Master Degree, USA Citizen
+ 
+_________________________________________________________________________________
+
+WORKING EXPERIENCE
+
+Intel, inc June 2022 – Dec 16,2022 Remote
+Team: ICMS-Forecast Team
+Worked as Senior Software Engineer
+Environment and Tools:  API with Java 1.8,  Spring boot, Spring JPA, QueryDSL, MQ-Active; MS SQL Server with Stored Procedures, Views and Database Triggers; WebUI/Javascript/HTML with AngularJS, ng-Grid, md materials, AngularJS Charts; IntelliJ for APIs and WebUI, GitHub and Gradle 
+(1)	Worked on ICMSForecastService(API), ICMSManagementService(API), ICMSSupplyDemandServeice(API) ICMSMessagingService(API) , Created JPA Domain Objects, DTO Objects, Mappers,  Generated QueryDSL Q-Class Object to create Micro Service Architect
+(2)	Made a lot of T-SQL Stored Procedures, Views and Database Triggers, handling complex database requirements
+(3)	Add components to WebUI projects with Angular JS , Grid, MD-Material based HTML and JS. Applied MD-Material and AngularJS to create exquisite and universal Grid and Charts.
+(4)	Created Emulation Forecast Tab Projects and Handled many trouble shorting in UI and fixed a lot bugs.
+
+
+
+Apple, Inc, San Jose,Cupertino (Aug  2019 – Jan. 2021)
+Senior Java Developer 
+Team:  Apply iAd Platform Core Service(CS) Development Team and CS QA Team
+Environment and Tools: Java, Spring, TestNG, Eclipse, Gradle, github, Rest API, JSON, Avro, Kafka, gradle, github
+Completed main projects and jobs: 
+(5)	Worked on iAd Platform CS Backend APIs maintenance and code bug ticket handling
+(6)	Using Scala created Avro Object Generic Converter between POJO and Avro Object for Kafka Streaming.
+(7)	Completed QA team Unit Test Platform for iAd Platform APIs test via TestNG, Java, JSON result parser
+(8)	Created JSON String library to parse the output of iAd Platform APIs, using this library to be able to read, write, compare, merge and check JSON Strings easily
+
+
+Walmart Lab Sunnyvale, CA (Oct 22, 2018 –Mar 2019)
+Senior Backend Java Developer 
+Team:  Walmart Online Shopping System Checkout and Cart Service Team
+Environment and Tools: Java, Eclipse, Gradle, github, Spring, Rest API, JSON, Avro, Kafka, gradle
+Completed main projects and jobs: 
+(1)	worked on Checkout Automation Text Platform involve technologies of Groovy/Gradle/Testing/JSON/DSL
+(2)	Trace Cart-Service code by STS debug mode and UMLet tool and got familiar to the Rest API, Design Patterns, Service Layers, Cache, Spring /Camel /Json DTO retrieve, and mapper to Hibernate DO. 
+(3)	Completed an assignment to add Group Component Attributes to Wireless Cart Service project. Trace Checkout Service flow and code in STS
+
+Apple, Inc, Sunnyvale, Cupertino CA (Oct 30,2017 – Oct 19,2018)
+Senior Software Engineer (Java with Security)
+Team:  Apply Pay SRE Team
+Environment and Tools: Core Java, Java keystore, Eclipse, Certificate X509, Splunk API, maven, github, Javascript, CSS, JSP, Apple Git Repository, Radar, Splunk
+Completed main projects and jobs: 
+(1)	Designed and implemented Apple Pay Certificates Maintenance Engines. This is special Tool for Certificate Renew, Create, Distribute, Notification and Check in. Create Spring and Javacript based UI interface
+(2)	Using AES algorithm to encrypt user credential. The tool retrieves expiring certificates alert by run Splunk API and CA Manager to retrieve, decrypt and parse Keystores Data from Git Repository, renew keystore by creating CSR to Apple CA Manager and import signed certificate chain from CA Manager, distribute keystore to multiple folders and check into Git Repository, send Radar notice to related parties. Now this automatic tool was deployed to SRE QA Server. 
+
+
+Dell R& D Center, Email Security Group of Dell SonicWall, Santa Clara, CA (Nov 2012 – Nov 2016)
+Senior Software Engineer (Fulltime)
+Team:  Email Security WebUI Team
+Environment and Tools: 
+Worked on as fulltime Senior Software Engineer for Java part of Email Security Products Team.
+Environment and Tools: Core Java, Thread, JDBC, Restful API, Struts, JQuery, JSP, Javascript, Sencha, CSS, HTML, Java Security, MySQL, XML, Email Security, DMARC Reporting, Log 4j2 framework
+Completed main projects and jobs: 
+(1)	Email Security WebUI system enhancement using Java, Struts, JSP, CSS, HTML, Javascript, JQuery, Restful, Java Security, MySQL, XM
+(2)	Email Security DMARC huge RUA XML parse/chunk import to MySql database using Java, SAX parser, JDBC and timer scheduler
+(3)	Email Security DMARC report rich UI and data gathering using Java, Struts, JSP, JQuery, Javascript, CSS
+(4)	DMARC Report complicated alignment text concluding using Java and Database
+(5)	Email Security WebUI XML Data Driving JQuery based widget with XML left side and Database right side
+(6)	Implemented Log4j2 Logger Framework for Email Security WebUI System using RESTful Client/Server Symmetric Key Authenticate and UI change log level for all server within server clusters, fixed the bugs for Log4j2 library for file appending etc
+(7)	Auto Perl Script tool to migrate thousands Struts JSP headers and Java code automatically 
+(8)	Large MySql database performance tuning
+(9)	Cluster Analysis Server Remote Data Collector UI interface using core Java, Java multithreading and Javascript Sencha for rich UI and XML gathering.
+
+Apprion, INC, Mountain View CA  (03/2011 - 02/2012)
+Senior Software Engineer(Fulltime)
+Team:  Wireless Monitor System Software Team
+Environment and Tools: Core Java, Struts/Spring MVC, JSP, CSS, HTML, Javascript, JQuery, Restful, JBOSS
+Java Quartz, Dojo, Scheduler, JasperReport, MySQL/Mongodb , JFreeChart.
+Completed main projects and jobs: 
+(1)	developed Web Applications as products to manage robust wireless devices and networking services to coarse workshops like paper mill, oil plant and modern buildings security etc. 
+(2)	worked with Agile Development team with Rally online, extensively use Java (JDK 1.5) , Eclipse 7.0 IDE, JBoss 4.03, MySQL, Struts, JSP, Spring MVC, Java Quartz  Scheduler, JasperReport, MySQL/Mongodb , JFreeChart, XML, XSD, Java DOM, JavaScript, Dojo, DWR etc.
+
+US Postal Service IT Center, San Mateo, CA (07/2008 - 01/2011)       
+Senior Java Developer (Fulltime)/Oracle Performance Tuner 
+Team:  USPS IT Center Postal One Team
+Environment and Tools: Java, JDBC, Oracle 10g, Struts, JSP, Standard/Struts Tags, Log4j, XML, Spring MVC, Ibstis, Ajax, JavaScript, CSS, Perl,  Coldfusion, J2EE, Session Bean and EJB, PERL, Subversion, CVS, IBM WSAD5.12 IDE, RAD7.5 IDE
+Completed main projects and jobs: 
+(1)	Worked on Placard Project as sub project of US Postal Postal One Project, Completed requirement collection, document, figured out 50 interfaces with Postal One Projects from existing code, coding the JSP, coldfusion, Java, JDBC, UI interface and placard report print report
+(2)	Worked on MLOCR Projects and completed the UI interface, Java code with Postal One Project
+(3)	Postal One main report database and code performance tuning, turning Oracle SQL statement on JDBC and JDBC fetching buffer, reduce the report running time from 96 seconds to 6 seconds
+(4)	Combined Java, Struts Taglib, JSP and applied some algorithms to create new pagination code which can contains changeable page lines size
+(5)	Provided PL/SQL code and JDBC turning
+						 
+TrueTelTechnology,Inc.  Santa Clara, CA (06/2006 to 05/2007)   
+Senior Software Engineer(Fulltime)
+Team:  TrueTel Software Team
+Environment and Tools: Linux, C++ ,CVS ,Java, extending computer science and linux knowleges
+Completed main projects and jobs: 
+(1)	worked in well funding start up company and very specialsubcontract of Boeing, this company was developing a special platform which is above Linux and running special apps.  
+(2)	I worked Linux signal based User Session Manager using solid computer science foundations: C/C++, IBM Rational Rose Design Tool, Linux System Programming, Signal Process, Multi-Processes, Multi-Thread, Pthread, Java, JNI, C++ STL, CVS, C++ Object Oriented Design and Coding
+(3)	I solved asynch-safe issue using existing smart reference, thread pool manager, Linux signal handling integrated with multi-processes
+
+Integrated Silicon Solution, Inc (ISSI) . Santa Clara, CA (07/2001 to 06/2004)   
+Senior Database DBA/Developer  (Fulltime)
+Team: IT Department Database Team
+Environment and Tools: SQL Server 2000, Oracle 8i, Baan ERP, PL/SQL, Baan SQL Script ,VBScript, Perl Script
+Completed main projects and jobs: 
+(1)	Worked as SQL_Server DBA/Developer, BaanERP Administrator, Oracle DBA/Developer, Java Developer, Baan Script and VBScript Developer. Worked cross teams, 24x7 on call service over USA
+(2)	Transferred ODBC data transfer from SQL-Server to Oracle
+(3)	Coded on Oracle PL/SQL, SQL_Server T_SQL procedures, RMAN Scripting, Perl Scripting, VBScript
+(4)	Baan SQL Script programming for Baan ERP System, Completed OET and Product Order Update  programming
+(5)	Created the schedule for the backup job scripts for Sql_Server Databases and did a lot of Performance Tuning
+(6)	Baan ERP System Data Migration and System Updated, Service Pack Installation
+(7)	Recovered Oracle and SQL_Server database from couple of disaster failures
+(8)	Database application and system performance tuning and did replication of SQL Server
+
+
+
