@@ -22,7 +22,21 @@
    
 ## Produce and consume Json Object
 
-  In configure-kafka-producer-consumer prject
+
+  In configure-kafka-producer-consumer prject, we try transfer Order class from producer to consumer in Json format
+  
+  
+      @Data
+      @NoArgsConstructor
+      @AllArgsConstructor
+      @Builder
+      @ToString
+      public class Order {
+          private String item;
+          private String deliveryType;
+          private Integer quantity;
+      }
+ 
  
   As we know , KafkaTemplate works for Producer, so create KafkaTemplate bean by configure ProducerFactory for Kafka Bootstrap Server, 
   key StringSerializer and Value JsonSerializer 
