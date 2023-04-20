@@ -1,0 +1,11 @@
+[2023-04-14 10:54:30,693] WARN Unexpected exception (org.apache.zookeeper.server.NIOServerCnxn)
+EndOfStreamException: Unable to read additional data from client, it probably closed the socket: address = /127.0.0.1:51140, session = 0x100025b35510007
+	at org.apache.zookeeper.server.NIOServerCnxn.handleFailedRead(NIOServerCnxn.java:163)
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:326)
+	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:522)
+	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:154)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+[2023-04-14 10:54:37,659] INFO Expiring session 0x100025b35510007, timeout of 18000ms exceeded (org.apache.zookeeper.server.ZooKeeperServer)
+[2023-04-14 10:54:38,434] INFO Invalid session 0x100025b35510007 for client /127.0.0.1:57562, probably expired (org.apache.zookeeper.server.ZooKeeperServer)
