@@ -16,7 +16,6 @@ import java.util.stream.Collectors;
 public class KafkaConsumer {
     @KafkaListener(topics= Constants.TOPIC_NAME, groupId=Constants.GROUP_ID_CONFIG)
     public void kafkaListener(String message) {
-
         log.info("Consumer get data: {} ", message);
     }
 
