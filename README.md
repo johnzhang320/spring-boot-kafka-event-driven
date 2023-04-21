@@ -1,8 +1,14 @@
 # spring-boot-kafka-event-driven
 ## spring boot kafka json and string producer and consumer 
-  We created two projects, one is JSON and other is String message.
+  We created two sub projects:
+  
+  kafka-json-code-producer-consumer: serializes Java POJO to topic with Json string bytes and deserializes to Json String / listen the POJO
+                                    
+  
+  kafka-message-code-producer-consumer: trasform local file (resume.txt) to lowercase and space delimited words, produce / consumer string message
+  
   Instead of application.properties or application.yml configuration, we use configre code to fillful Kafka configuration
-  Which providing an approach to explicitly load JsonDeSerializer configuration by ConcurrentKafkaListenerContainerFactory  
+  Especially for  Which providing an approach to explicitly load JsonDeSerializer configuration by ConcurrentKafkaListenerContainerFactory  
   
    
 ## Start Zookeeper and Kafka
@@ -62,7 +68,7 @@
             config.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, Constants.BOOTSTRAP_NAME);
             config.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
             config.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
-            // consumer must trust either Package or Model Object of producer, this is trouble me so long time, either one is OK !!!
+            // consumer must trust either Package or Model Object of producer, either one is OK !!!
             config.put(JsonDeserializer.TRUSTED_PACKAGES,"com.configure.kafka.producer.consumer.model.Order");
             return new DefaultKafkaConsumerFactory<>(config,new StringDeserializer(),new JsonDeserializer<>(Order.class));
         }
