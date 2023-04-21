@@ -1,10 +1,10 @@
 # spring-boot-kafka-event-driven
 ## spring boot kafka json and string producer and consumer 
-  We created two projects, instead of application.properties or application.yml configuration, we use code to fillful configuration
-  Main reason one: AS CS version of Intellij community edition, it does not support properties file "auto complete" feature, code config does
-  second reason: consumer JsonDeSerialize needs ConcurrentKafkaListenerContainerFactory to config listener directly consumes json object not a 
-  message string, so far we can not find this configure by yml or properties 
-
+  We created two projects, one is JSON and other is String message.
+  Instead of application.properties or application.yml configuration, we use configre code to fillful Kafka configuration
+  Which providing an approach to explicitly load JsonDeSerializer configuration by ConcurrentKafkaListenerContainerFactory  
+  
+   
 ## Start Zookeeper and Kafka
        download kafka_2.12-2.1.0.tgz from https://archive.apache.org/dist/kafka/2.1.0/kafka_2.12-2.1.0.tgz
        tar cvx kafka_2.12-2.1.0.tgz
@@ -17,14 +17,13 @@
        make sure following two processes running
        xxxx QuorumPeerMain
        xxxx Kafka
-
-   
+       
+### all topics will be automatically created by java code   
+   we can use shell script in directory kafka_start_stop to show topic, producer and consumer status content
    
 ## Produce and consume Json Object
 
-
   In configure-kafka-producer-consumer prject, we try transfer Order class from producer to consumer in Json format
-  
   
       @Data
       @NoArgsConstructor
@@ -113,12 +112,11 @@
    ![](images/consumer_listened_order_json_object.png)
    
    
- ## Producer and consumer for String 
+ ## Producer and consumer for String Message
    In kafka-message-code-producer-consumer, configuration is simple, consumerfactory does not need to load into ConcurrentKafkaListener
-   because consumer default accept string, all the code in repository, we do not need to example 
-   Here is the producer service code which will be called by controller and read the local resume.txt file and convert string to lowercase and
-   each words are delimited by a space !
-   send to topic 
+   because consumer default accept string via stringDeserializer, all the code in repository, we do not need to example here
+   Here only list the producer service code which will be called by controller and read the local resume.txt file to be java stream<String> and 
+   convert string to lowercase and each words are delimited by a space then send to topic 
    
          ....
         @Service
@@ -136,7 +134,7 @@
                 final Predicate<String> valueNotNullOrEmpty
                         = e -> e != null && !e.isEmpty() && e.trim().length()>1;
 
-                Path path = Paths.get("src/main/resume.txt");
+               Path path = Paths.get("src/main/resume.txt");
                List<String> words= Files.lines(path)
                        .flatMap(line -> Arrays.stream(line.trim().split("\\s")))
                        .filter(valueNotNullOrEmpty)
