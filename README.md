@@ -24,7 +24,7 @@
        xxxx QuorumPeerMain
        xxxx Kafka
        
-### all topics will be automatically created by java code   
+### All topics will be automatically created by java code   
    we can use shell script in directory kafka_start_stop to show topic, producer and consumer status content
    
 ## Produce and consume Json Object
